@@ -1,0 +1,74 @@
+ /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：有房有客微信CDN框架
+ 2. 文件名称：我的文章页
+ 3. 作者：豆亚东@lifang.com
+ 4. 备注：
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import "../mixins.less";
+@import "../variables.less";
+@import "../components/articleItem.less";
+body {
+    .title{
+        border: 1px solid #E5E5E5;
+        .border-radius(6px);
+        font-size: 0.3733rem ;
+        line-height: 1.1733rem ;
+        margin: @padding ;
+        a{
+            color: @yfyk-color ;
+            display: inline-block ;
+            height: 100% ;
+            width: 100% ;
+        }
+    } 
+    .tool{
+        color: #fff ;
+        font-size: 0.3733rem ;
+        margin-top: 16px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform:translateX(-50%);
+        z-index: 9999;
+        &.none{
+            display: none;
+        }
+        .arrow{
+            position: absolute;
+            top:-12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .arrow:before{
+            content: '';
+            position: absolute;
+            border-left: 6px solid transparent;
+            border-top: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid rgba( 0 , 0 , 0 , .6 );
+        }
+        .inner{
+            background-color: rgba(0,0,0,.6);
+            .border-radius(10px);
+            padding:13.5px 8.5px ;
+            p{
+                line-height: 1;
+                &+p{
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .no-article{
+        margin-top: 4rem ;
+        text-align: center ;
+        img{
+            width: 6rem ;
+        }
+        p{
+            color: #7c7c7c ;
+            font-size: 0.3733rem ;
+            margin-top: 0.8rem ;
+        }
+    }
+}

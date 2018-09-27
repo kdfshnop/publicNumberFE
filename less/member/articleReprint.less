@@ -1,0 +1,60 @@
+ /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：有房有客微信CDN框架
+ 2. 文件名称：转载文章页
+ 3. 作者：豆亚东@lifang.com
+ 4. 备注：
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import "../mixins.less";
+@import "../variables.less";
+body{
+    .gap{
+        background-color: #f0f0f0 ;
+        height:10px ;
+    }
+    ul{
+        background-color: #fff ;
+        color: @default-font-color ;
+        font-size: 0.4267rem ; 
+        li{
+            .clearfix();
+            margin-left: @padding ;
+            padding:@padding  @padding @padding 0;
+            p{
+                float:left ;
+                padding-right:20px ;
+            }
+            textarea{
+                .paragraph-ellipsis(2);
+            }
+            .edit-title{
+                margin-left: 50px ;
+                outline: none ;
+            }
+            .origin{
+                margin-left: 50px;
+            }
+            .cover-img{
+                height:1.8667rem !important;
+                width:2.8rem !important;
+            }
+        }
+    }
+    .content{
+        background-color: #fff ;
+        padding:@padding @padding 0 ;
+        font-size: 12px!important ;
+    }
+    .publish{
+        background-color: #fff ;
+        bottom:0 ;
+        box-shadow:0 -2px 6px 1px rgba(0,0,0,0.1) ;
+        padding:@padding ;
+        position: fixed ;
+        display: block ;
+        width:100% ;
+        button{
+            border: none ;
+            outline: none ;
+        }
+    }
+}

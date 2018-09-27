@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <title>有房有客微信项目组件使用Demo</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name = "format-detection" content = "telephone=no">
+        <!-- 引入stylesheet资源 -->               
+        <link rel="stylesheet" href="//test01.fe.wkzf/yf2wechat_fe/css/app.min.css?v=3.14">
+        <link rel="stylesheet" href="//test01.fe.wkzf/yf2wechat_fe/css/ios.min.css?v=3.14">      
+    </head>
+    <body ontouchstart="">
+        <div class="panel padding">
+            <a id="tipsDemo" class="btn btn-yfyk">弹出一个tips框</a>
+            <a id="modalDemo" class="btn btn-outline superfine-borders-yfyk btn-yfyk-reverse relative">弹出一个Modal框</a>            
+            <a class="btn btn-block btn-yfyk top-gap">这是一个通栏按钮</a>
+            <a class="btn btn-radius btn-yfyk-alpha btn-yfyk-reverse superfine-borders-yfyk-radius top-gap relative">立即下载APP</a>
+            <a class="btn btn-radius btn-wkzf-alpha btn-wkzf-reverse superfine-borders-wkzf-radius top-gap relative">立即下载APP</a>
+        </div>
+        <div class="panel-fence"></div>
+        <div class="panel">
+            <div class="tabs swiper-container">
+                <ul class="tabs-handle superfine-border-bottom-fence" style="position : relative ; ">
+                    <li><a>在售二手房</a></li>
+                    <li><a>在售新房</a></li>
+                    <li><a>在租房源</a></li>
+                    <li><a>房产资讯</a></li>
+                </ul>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide esf padding">这是在售二手房容器</div>
+                    <div class="swiper-slide xf padding">这是在售新房容器</div>
+                    <div class="swiper-slide rent padding">这是在租房源容器</div>
+                    <div class="swiper-slide press padding">这是房产资讯容器</div>
+                </div>
+            </div>
+            <ul class="padding-left">
+                <li class="extensible" style="font-size : .373rem ; line-height : 40px ;height : 40px;">这是右边出可操作的箭头的风格</li>
+                <li class="superfine-border-top-fence relative"></li>
+                <li style="font-size : .373rem ; line-height : 40px ;height : 40px;">这是没有可操作的箭头的风格</li>                
+            </ul>
+        </div>
+        <div class="panel-legend">这是panel的legend部分</div>
+        <div class="panel padding-lr top-gap relative" style="background-color : #f9f9f9 ; text-align : center ;">
+            我有tooltip框
+            <div class="tooltip">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner">试一试 AI 智能采集文章<br>给你微营销新体验</div>
+            </div>
+        </div>
+        <div style="height : 100px ;"></div>
+        <div class="panel-legend">接下来是图标的表演</div>
+        <div class="panel padding">
+           <i class="icon-15 v"></i> <i class="icon-15 clear"></i> <i class="icon-25 v"></i> <i class="icon-25 article"></i> <i class="icon-25 add-xf"></i> <i class="icon-90 v"></i> <i class="icon-90 member"></i> <i class="icon-120 wkzf"></i> <i class="icon-120 yfyk"></i>
+        </div>
+        <script src="//test01.fe.wkzf/yf2wechat_fe/js/app.min.js?v=3.14"></script>                    
+        <script data-main="//test01.fe.wkzf/yf2wechat_fe/js/home/index.min.js?v=3.14" src="//test01.fe.wkzf/fe_public_library/wkzf/js/require.min.js?v=3.14"></script>        
+    </body>
+</html>

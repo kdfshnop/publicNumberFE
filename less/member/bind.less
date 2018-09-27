@@ -1,0 +1,53 @@
+ /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：有房有客微信CDN框架
+ 2. 文件名称：手机绑定页
+ 3. 作者：豆亚东@lifang.com
+ 4. 备注：
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import "../mixins.less";
+@import "../variables.less";
+body {
+    background-color : #f0f0f0 ;
+    .bounding {
+        padding-top: 20px ;
+        .bound{
+            background-color: white ;
+            .border-radius(5px) ;
+            .auth-code {
+                height: 1.4667rem ;
+                padding-top: 0.4267rem ;
+                .tel {
+                    border: none ;
+                    float: left ;
+                    font-size: 0.4267rem ;
+                    line-height: 1.4 ;
+                    outline: none ;
+                }
+                .verify  {
+                    background-color: #fff ;
+                    border: none ;
+                    color: @yfyk-color ;
+                    font-size: 0.4267rem ;
+                    float: right ;
+                    outline: none ;
+                }
+            }
+            .note{
+                height: 1.4667rem ;
+                padding-top: 0.4267rem ;
+                input {
+                    border: none ;
+                    float:left ;
+                    font-size: 0.4267rem ;
+                    line-height: 1.4 ;
+                    outline: none ;
+                }
+            }
+        }
+        .btn {
+            border: none ;
+            margin-top: 20px ;
+            outline: none ;
+        }
+    }  
+}

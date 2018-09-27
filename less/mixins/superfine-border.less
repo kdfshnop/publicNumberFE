@@ -1,0 +1,76 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：有房有客微信CDN框架
+ 2. 文件名称：src -> less -> mixins -> superfine-border.less(混合 -> 1px边框)
+ 3. 作者：zhaohuagang@lifang.com
+ 4. 备注：这个混合是为了解决在移动端1px边框有些浏览器看起来呈现2px或者更大值的问题
+                使用这个混合的前提是被赋予混合的dom节点是脱离文档流的，也就是position为：absolute | relative | fixed之中的一种
+                主要为了安卓系统超细边框适配用，ios下通过flexible加border : .5px solid transparent ;就可以实现了
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ .superfine-border() {
+     content : "" ;
+     position : absolute ;
+     visibility : visible ;
+ }
+ .superfine-border-top() {
+     &:before {
+        border-top : 1px solid transparent ;            
+        height : 1px ;        
+        left : 0 ;
+        .scale(1 , .5) ;
+        .superfine-border() ;
+        top : 0 ;
+        width : 100% ;
+     }
+ }
+
+  .superfine-border-bottom() {
+     &:after {
+        border-bottom : 1px solid transparent ;
+        bottom : 0 ;        
+        height : 1px ;        
+        left : 0 ;
+        .scale(1 , .5) ;
+        .superfine-border() ; 
+        width : 100% ;        
+     }
+ }
+
+ .superfine-border-left() {
+     &:before {
+        border-left : 1px solid transparent ;       
+        height : 100% ;        
+        left : 0 ;
+        .scale(.5 , 1) ;
+        .superfine-border() ; 
+        top : 0 ;        
+        width : 1px ;
+     }
+ }
+
+  .superfine-border-right() {
+     &:after {
+        border-right : 1px solid transparent ;
+        height : 100% ;        
+        right : 0 ;
+        .scale(.5 , 1) ;
+        .superfine-border() ; 
+        top : 0 ;        
+        width : 1px ;
+     }
+ }
+
+ .superfine-borders(){
+    //position: relative;//这里也要保证dom元素是脱离文档流的
+    border : none ;
+    &:after{
+        border : 1px solid transparent ;        
+        height : 200% ;
+        left : 0 ;
+        .scale(.5 , .5) ;
+        .superfine-border() ; 
+        -webkit-transform-origin : left top;
+        transform-origin : left top ;
+        top : 0 ;
+        width : 200% ;        
+    }
+ }

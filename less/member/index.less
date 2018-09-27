@@ -1,0 +1,123 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：有房有客微信CDN框架
+ 2. 文件名称：member -> index.less (个人首页)
+ 3. 作者：tll
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import "../variables/global.less";
+body {
+    background-color: #f0f0f0;
+}
+.member-index {
+    .user-info {
+        height: 5.3333rem;
+        font-size: 0.3733rem;
+        color: #FFFFFF;
+        background: url("../../images/bgImage.png") no-repeat center center/100% 100%;
+        text-align: center;
+        .edit {
+            text-align: right;
+            padding: 0.5333rem 0.4rem 0.2933rem 0;
+            .has-arrow {
+                margin-right: 0.3rem;
+                vertical-align: top;
+                text-decoration: none;
+                color: #fff;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 0.1867rem;
+                    height: 0.1867rem;
+                    border-top: 1px solid #fff;
+                    border-right: 1px solid #fff;
+                    transform: rotate(45deg);
+                    position: relative;
+                    top: -1px;
+                    left: 0.0933rem;
+                }
+            }
+        }
+        .pic {
+            width: 55px;
+            height: 55px;
+            margin: 0 auto;
+            position: relative;
+            .photo {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                border: 3px solid rgba(255, 255, 255, .3);
+                // background: url("../../images/icon-90.png") no-repeat;
+                // background-position: 0 -49px;;
+                // background-size: 100%;
+                // background-clip:content-box;
+            }
+            .logo {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                // width: 15px;
+                // height: 15px;
+                // background: url("../../images/icon-15.png") no-repeat;
+                // background-position: 0 0;
+                background-size: 100%;
+            }
+        }
+        .approve {
+            margin: 0.2rem 0 0.2667rem;
+        }
+        .agent-name {
+            font-size: 0.4267rem;
+        }
+    }
+    .my {
+        margin-top: 0.2667rem;
+        background-color: #fff;
+        .title {
+            height: 1.2rem;
+            font-size: 0.4267rem;
+            line-height: 1.2rem;
+            padding-left: 1.1333rem;
+            a {
+                color: #000;
+                display: block;
+            }
+            i {
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+                top: 0.24rem;
+                left: .1rem;
+                background-size: 100%;
+            }
+        }
+        .title:nth-child(1):before {
+            background-position: 0 0;
+        }
+        .title:nth-child(3):before {
+            background-position: 0 -25px;
+        }
+        .title:nth-child(5):before {
+            background-position: 0 -50px;
+        }
+    }
+    .panel-legend {
+        margin-top: 0.4rem;
+    }
+    .download {
+        background-color: #fff;
+        padding-left: .4rem;
+        .dl-common {
+            padding: 0.5867rem 0.4rem 0.5867rem 0;
+            line-height: 2.0267rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .icon-120 {
+            height: 40px;
+        }
+        .yfyk {
+            background-position: 0 -40px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：有房有客微信CDN框架
+ 2. 文件名称：cityPicker.less (城市选择)
+ 3. 作者：zhaohuagang@lifang.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.city-picker-mask {
+    background-color : rgba( 0 , 0 , 0 , .4 ) ;
+    display : none ;
+    height : 100% ;
+    left : 0 ;
+    position : fixed ;
+    top : 0 ;
+    width : 100% ;
+    z-index : 9000 ;
+}
+.city-picker {
+    .clearfix() ;
+    background-color : #fff ;
+    bottom : 0 ;
+    display : none ;
+    height : 253px ;
+    left : 0 ;
+    position : fixed ;
+    width : 100% ;
+     z-index : 9001 ;
+    &>.fence {
+        background-color : @light-line-gray-color  ;
+        height : 193px ;
+        left : 50% ;
+        position : absolute ;
+        top : 25px ;
+        width : 1px ;
+    }
+    &>.province {            
+        float : left ;
+        height : 243px ;
+        overflow : auto ;
+        padding : 5px 0 ;
+        width : 50% ;            
+    }
+    &>.city {
+        display : none ;
+        height : 253px ;
+        margin-left : 50% ;
+        overflow : auto ;
+    }
+    &>.province , &>.city {
+        &>li {
+            font-size : .4rem ;
+            line-height : 44px ;
+            text-align : center ;
+            &.on {
+                color : @yfyk-color ;
+            }
+        }
+     }
+}

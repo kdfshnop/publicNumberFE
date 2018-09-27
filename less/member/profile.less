@@ -1,0 +1,87 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：有房有客微信CDN框架
+ 2. 文件名称：member -> profile.less (个人资料显示)
+ 3. 作者：tll
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../variables.less";
+@import "../mixins.less";
+@import "../components/townPicker.less";
+body {
+    background-color: #F0F0F0;
+}
+
+.information {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
+    font-size: 0.4267rem;
+    padding-left: 0.2667rem;
+    margin-top: 0.4rem;
+    color: #000;
+    .photo,
+    .name,
+    .identity,
+    .city,
+    .dist {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 1.0267rem;
+    }
+    .photo {
+        height: 1.8667rem;
+        line-height: 1.8667rem;
+        .pic {
+            height: 1.3333rem;
+            width: 1.3333rem;
+            border-radius: 50%;
+            display: inline-block;
+            margin-top: 0.2667rem;
+            // background: url("../../images/headPortrait.png") center center/1.3333rem 1.3333rem no-repeat;
+        }
+    }
+    .name,
+    .identity,
+    .city {
+        height: 1.2rem;
+        line-height: 1.2rem;
+    }
+    .dist {
+        padding: 0.28rem 0;
+        #townSelector {
+            width: 100%;
+            position: relative;
+            color: #000;
+            dl {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 1.0267rem;
+            }
+            dt {
+                width: 2.24rem;
+            }
+            dd {
+                max-width: 6.3333rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+            .arrows {
+                position: absolute;
+                right: 0.5rem;
+                top: 50%;
+                transform: translateY(-50%);
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    height: 0.2rem;
+                    width: 0.2rem;
+                    border-top: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}

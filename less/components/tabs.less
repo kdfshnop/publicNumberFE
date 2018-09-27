@@ -1,0 +1,30 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：有房有客微信CDN框架
+ 2. 文件名称：src -> less -> components ->  tab.less (标签页)
+ 3. 作者：42547335@qq.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.tabs {   
+    .tabs-handle {
+         background-color : #fff ;       
+         .clearfix() ;
+         .flex() ;
+         padding : 0 @padding  ;
+        &>li {            
+            .flex(1) ;                                  
+            text-align : center ;
+            &>a {
+                border-bottom : 2px solid transparent ;
+                display : inline-block ;
+                font-size : .373rem ;
+                line-height : 44px ;  
+            }
+            &.on>a {
+                border-bottom-color : @yfyk-color ;
+                color : @yfyk-color ;               
+            }
+        }
+    }
+    .tabs-frame {
+        display : none ;        
+    }
+}
